@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="unload">
+    <graph role="rule" edgeids="false" edgemode="directed" id="unload-two">
+        <attr name="priority">
+            <string>1</string>
+        </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -11,17 +14,17 @@
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>393 393 27 18</string>
-            </attr>
-        </node>
-        <node id="n2">
-            <attr name="layout">
-                <string>272 321 19 19</string>
+                <string>495 398 27 18</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>276 386 19 19</string>
+                <string>363 399 19 19</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>363 319 19 19</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -36,23 +39,34 @@
         </edge>
         <edge from="n1" to="n0">
             <attr name="label">
-                <string>del:go</string>
+                <string>new:moored</string>
             </attr>
             <attr name="layout">
-                <string>206 -17 416 390 489 335 11</string>
+                <string>541 27 508 407 508 326 11</string>
             </attr>
         </edge>
         <edge from="n1" to="n0">
             <attr name="label">
-                <string>new:moored</string>
+                <string>del:go</string>
             </attr>
             <attr name="layout">
-                <string>541 27 484 445 509 338 11</string>
+                <string>206 -17 508 407 508 326 11</string>
             </attr>
         </edge>
-        <edge from="n2" to="n1">
+        <edge from="n3" to="n1">
             <attr name="label">
                 <string>del:in</string>
+            </attr>
+            <attr name="layout">
+                <string>485 12 296 407 508 407 11</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n0">
+            <attr name="label">
+                <string>new:on</string>
+            </attr>
+            <attr name="layout">
+                <string>446 14 296 406 508 326 11</string>
             </attr>
         </edge>
         <edge from="n2" to="n0">
@@ -60,14 +74,14 @@
                 <string>new:on</string>
             </attr>
         </edge>
-        <edge from="n3" to="n0">
-            <attr name="label">
-                <string>new:on</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n1">
+        <edge from="n2" to="n1">
             <attr name="label">
                 <string>del:in</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n3">
+            <attr name="label">
+                <string>!=</string>
             </attr>
         </edge>
     </graph>

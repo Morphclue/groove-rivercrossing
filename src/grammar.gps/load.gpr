@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="load-row-cannibal">
+    <graph role="rule" edgeids="false" edgemode="directed" id="load">
         <attr name="$version">
             <string>curly</string>
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>374 412 27 18</string>
+                <string>221 489 44 18</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>214 502 28 18</string>
+                <string>223 407 28 18</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>538 505 28 18</string>
-            </attr>
-        </node>
-        <node id="n4">
-            <attr name="layout">
-                <string>204 406 48 36</string>
+                <string>434 408 28 18</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>222 582 19 19</string>
+                <string>326 312 27 18</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>225 311 19 19</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
             <attr name="label">
-                <string>boat</string>
+                <string>flag:canRow</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n3">
+            <attr name="label">
+                <string>new:in</string>
             </attr>
         </edge>
         <edge from="n0" to="n1">
             <attr name="label">
-                <string>del:moored</string>
-            </attr>
-        </edge>
-        <edge from="n0" to="n2">
-            <attr name="label">
-                <string>new:go</string>
+                <string>del:on</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -59,17 +59,22 @@
                 <string>bank</string>
             </attr>
         </edge>
-        <edge from="n4" to="n4">
+        <edge from="n3" to="n3">
             <attr name="label">
-                <string>flag:canRow</string>
+                <string>boat</string>
             </attr>
         </edge>
-        <edge from="n4" to="n4">
+        <edge from="n3" to="n1">
             <attr name="label">
-                <string>cannibal</string>
+                <string>del:moored</string>
             </attr>
         </edge>
-        <edge from="n4" to="n0">
+        <edge from="n3" to="n2">
+            <attr name="label">
+                <string>new:go</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n3">
             <attr name="label">
                 <string>new:in</string>
             </attr>
@@ -77,16 +82,6 @@
         <edge from="n4" to="n1">
             <attr name="label">
                 <string>del:on</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n1">
-            <attr name="label">
-                <string>del:on</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n0">
-            <attr name="label">
-                <string>new:in</string>
             </attr>
         </edge>
     </graph>
