@@ -22,11 +22,6 @@
                 <string>211 354 28 18</string>
             </attr>
         </node>
-        <node id="n4">
-            <attr name="layout">
-                <string>375 350 27 18</string>
-            </attr>
-        </node>
         <node id="n3">
             <attr name="layout">
                 <string>282 469 62 18</string>
@@ -70,16 +65,6 @@
         <edge from="n2" to="n2">
             <attr name="label">
                 <string>bank</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>boat</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n2">
-            <attr name="label">
-                <string>not:moored</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">

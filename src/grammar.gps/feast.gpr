@@ -9,22 +9,17 @@
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>155 272 48 18</string>
+                <string>109 274 48 18</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>265 272 48 18</string>
+                <string>319 269 48 18</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
                 <string>211 354 28 18</string>
-            </attr>
-        </node>
-        <node id="n4">
-            <attr name="layout">
-                <string>375 350 27 18</string>
             </attr>
         </node>
         <node id="n3">
@@ -47,6 +42,11 @@
                 <string>210 204 48 18</string>
             </attr>
         </node>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>cannibal</string>
+            </attr>
+        </edge>
         <edge from="n0" to="n7">
             <attr name="label">
                 <string>!=</string>
@@ -57,14 +57,14 @@
                 <string>on</string>
             </attr>
         </edge>
-        <edge from="n0" to="n0">
-            <attr name="label">
-                <string>cannibal</string>
-            </attr>
-        </edge>
         <edge from="n0" to="n1">
             <attr name="label">
                 <string>!=</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>cannibal</string>
             </attr>
         </edge>
         <edge from="n1" to="n7">
@@ -77,24 +77,9 @@
                 <string>on</string>
             </attr>
         </edge>
-        <edge from="n1" to="n1">
-            <attr name="label">
-                <string>cannibal</string>
-            </attr>
-        </edge>
         <edge from="n2" to="n2">
             <attr name="label">
                 <string>bank</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n2">
-            <attr name="label">
-                <string>not:moored</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>boat</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -112,6 +97,11 @@
                 <string>not:on</string>
             </attr>
         </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>missionary</string>
+            </attr>
+        </edge>
         <edge from="n5" to="n2">
             <attr name="label">
                 <string>not:on</string>
@@ -120,11 +110,6 @@
         <edge from="n5" to="n6">
             <attr name="label">
                 <string>!=</string>
-            </attr>
-        </edge>
-        <edge from="n5" to="n5">
-            <attr name="label">
-                <string>missionary</string>
             </attr>
         </edge>
         <edge from="n6" to="n6">
@@ -145,6 +130,11 @@
         <edge from="n7" to="n7">
             <attr name="label">
                 <string>cannibal</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n2">
+            <attr name="label">
+                <string>on</string>
             </attr>
         </edge>
     </graph>

@@ -9,22 +9,17 @@
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>155 272 48 18</string>
+                <string>117 274 48 18</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>265 272 48 18</string>
+                <string>304 272 48 18</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
                 <string>211 354 28 18</string>
-            </attr>
-        </node>
-        <node id="n4">
-            <attr name="layout">
-                <string>375 350 27 18</string>
             </attr>
         </node>
         <node id="n3">
@@ -87,16 +82,6 @@
                 <string>bank</string>
             </attr>
         </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>boat</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n2">
-            <attr name="label">
-                <string>not:moored</string>
-            </attr>
-        </edge>
         <edge from="n3" to="n3">
             <attr name="label">
                 <string>missionary</string>
@@ -145,6 +130,11 @@
         <edge from="n7" to="n7">
             <attr name="label">
                 <string>cannibal</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n2">
+            <attr name="label">
+                <string>on</string>
             </attr>
         </edge>
     </graph>
