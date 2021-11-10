@@ -21,32 +21,32 @@
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>499 252 48 18</string>
+                <string>438 241 48 18</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>565 252 48 18</string>
+                <string>630 240 48 18</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>629 241 48 36</string>
+                <string>531 171 48 36</string>
             </attr>
         </node>
         <node id="n6">
             <attr name="layout">
-                <string>470 431 62 36</string>
+                <string>433 451 62 36</string>
             </attr>
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>550 429 62 36</string>
+                <string>523 543 62 36</string>
             </attr>
         </node>
         <node id="n8">
             <attr name="layout">
-                <string>631 429 62 36</string>
+                <string>627 452 62 36</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -89,6 +89,16 @@
                 <string>on</string>
             </attr>
         </edge>
+        <edge from="n3" to="n4">
+            <attr name="label">
+                <string>!=</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n5">
+            <attr name="label">
+                <string>!=</string>
+            </attr>
+        </edge>
         <edge from="n4" to="n4">
             <attr name="label">
                 <string>cannibal</string>
@@ -114,6 +124,11 @@
                 <string>on</string>
             </attr>
         </edge>
+        <edge from="n5" to="n4">
+            <attr name="label">
+                <string>!=</string>
+            </attr>
+        </edge>
         <edge from="n6" to="n6">
             <attr name="label">
                 <string>flag:canRow</string>
@@ -129,6 +144,11 @@
                 <string>on</string>
             </attr>
         </edge>
+        <edge from="n6" to="n8">
+            <attr name="label">
+                <string>!=</string>
+            </attr>
+        </edge>
         <edge from="n7" to="n7">
             <attr name="label">
                 <string>flag:canRow</string>
@@ -142,6 +162,16 @@
         <edge from="n7" to="n0">
             <attr name="label">
                 <string>on</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n8">
+            <attr name="label">
+                <string>!=</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n6">
+            <attr name="label">
+                <string>!=</string>
             </attr>
         </edge>
         <edge from="n8" to="n8">

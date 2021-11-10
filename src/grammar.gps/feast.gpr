@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="mealtime">
+    <graph role="rule" edgeids="false" edgemode="directed" id="feast">
         <attr name="priority">
             <string>1</string>
         </attr>
@@ -42,6 +42,11 @@
                 <string>84 469 62 18</string>
             </attr>
         </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>210 204 48 18</string>
+            </attr>
+        </node>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>cannibal</string>
@@ -57,6 +62,11 @@
                 <string>on</string>
             </attr>
         </edge>
+        <edge from="n0" to="n7">
+            <attr name="label">
+                <string>!=</string>
+            </attr>
+        </edge>
         <edge from="n1" to="n1">
             <attr name="label">
                 <string>cannibal</string>
@@ -65,6 +75,11 @@
         <edge from="n1" to="n2">
             <attr name="label">
                 <string>on</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n7">
+            <attr name="label">
+                <string>!=</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
@@ -125,6 +140,11 @@
         <edge from="n6" to="n3">
             <attr name="label">
                 <string>!=</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>cannibal</string>
             </attr>
         </edge>
     </graph>
