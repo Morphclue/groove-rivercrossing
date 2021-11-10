@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="feast">
-        <attr name="priority">
-            <string>2</string>
+        <attr name="actionRole">
+            <string>forbidden</string>
         </attr>
         <attr name="$version">
             <string>curly</string>
@@ -47,9 +47,9 @@
                 <string>210 204 48 18</string>
             </attr>
         </node>
-        <edge from="n0" to="n0">
+        <edge from="n0" to="n7">
             <attr name="label">
-                <string>cannibal</string>
+                <string>!=</string>
             </attr>
         </edge>
         <edge from="n0" to="n2">
@@ -57,12 +57,17 @@
                 <string>on</string>
             </attr>
         </edge>
-        <edge from="n0" to="n7">
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>cannibal</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n1">
             <attr name="label">
                 <string>!=</string>
             </attr>
         </edge>
-        <edge from="n0" to="n1">
+        <edge from="n1" to="n7">
             <attr name="label">
                 <string>!=</string>
             </attr>
@@ -77,19 +82,9 @@
                 <string>cannibal</string>
             </attr>
         </edge>
-        <edge from="n1" to="n7">
-            <attr name="label">
-                <string>!=</string>
-            </attr>
-        </edge>
         <edge from="n2" to="n2">
             <attr name="label">
                 <string>bank</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>boat</string>
             </attr>
         </edge>
         <edge from="n4" to="n2">
@@ -97,19 +92,24 @@
                 <string>not:moored</string>
             </attr>
         </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>boat</string>
+            </attr>
+        </edge>
         <edge from="n3" to="n3">
             <attr name="label">
                 <string>missionary</string>
             </attr>
         </edge>
-        <edge from="n3" to="n2">
-            <attr name="label">
-                <string>not:on</string>
-            </attr>
-        </edge>
         <edge from="n3" to="n5">
             <attr name="label">
                 <string>!=</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n2">
+            <attr name="label">
+                <string>not:on</string>
             </attr>
         </edge>
         <edge from="n5" to="n2">
@@ -127,6 +127,11 @@
                 <string>missionary</string>
             </attr>
         </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>missionary</string>
+            </attr>
+        </edge>
         <edge from="n6" to="n2">
             <attr name="label">
                 <string>on</string>
@@ -135,11 +140,6 @@
         <edge from="n6" to="n3">
             <attr name="label">
                 <string>!=</string>
-            </attr>
-        </edge>
-        <edge from="n6" to="n6">
-            <attr name="label">
-                <string>missionary</string>
             </attr>
         </edge>
         <edge from="n7" to="n7">
