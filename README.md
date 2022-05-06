@@ -1,8 +1,12 @@
+# Groove Rivercrossing
+This project contains a solution for the missionary and cannibal problem. It was implemented by using [Groove](https://sourceforge.net/projects/groove/).
+
 ### Missionary and cannibal problem
 Three missionaries and three cannibals are standing next to a river. They want to get all to the other side, but they always need someone that can row. All three missionaries are able to row. There is also one cannibal that is able to row. Cannibals are actually pretty friendly people, but if there are more cannibals than missionaries on one side their hunger overcomes their rationality.
 
-#### Solution
+### Solution
 The following table describes a possible solution with the applied grammar-rules.  
+🧙‍♂️ = Missionary, 🧟‍♂️ = Cannibal, 🚣‍♂️ = Cannibal that can row
 
 | 🔄 | 👈 | ⛵ | 👉 | 🧾
 | :---: | :---: | :---: | :---: | :---: |
@@ -33,5 +37,3 @@ The following table describes a possible solution with the applied grammar-rules
 | 90 |🧙‍🧟‍♂️    |  |🧙‍🧙‍🧟‍♂️🚣‍   | load |
 | 92 |  |🧙‍🧟‍♂️   |🧙‍🧙‍🧟‍♂️🚣‍  | unload-two |
 | 96 |  |  |🧙‍♂️🧙‍♂️🧙‍🧟‍🧟‍🚣‍♂️ | final |
-
-🧙‍♂️ = Missionary, 🧟‍♂️ = Cannibal, 🚣‍♂️ = Cannibal that can row
